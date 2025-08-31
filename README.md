@@ -24,8 +24,8 @@ if IN_COLAB:
         ninja-build # Ninja can speed up compilation if available
 
     ! wget -O /tmp/tvm.zip https://github.com/Ethan-a2/TVM_colab/raw/main/build/apache_0.21_tvm_colab.zip
-    ! mkdir -p /tvm
-    ! unzip "/tmp/apache_0.21_tvm_colab.zip" -d /tmp/ && cp -r /tmp/python /tvm
+    ! rm -rf /tvm;mkdir -p /tvm
+    ! unzip "/tmp/tvm.zip" -d /tvm/
     ! ls -la /tvm
 
     # Add TVM to the Python path.
