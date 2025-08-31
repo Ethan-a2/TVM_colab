@@ -23,7 +23,7 @@ if IN_COLAB:
         libclang-15-dev \
         ninja-build # Ninja can speed up compilation if available
 
-    ! wget -O /tmp/tvm.zip https://github.com/Ethan-a2/TVM_colab/raw/master/build/python.zip
+    ! wget -O /tmp/tvm.zip https://github.com/Ethan-a2/TVM_colab/raw/main/build/python.zip
     ! mkdir -p /tvm
     ! unzip "/tmp/tvm.zip" -d /tmp/ && cp -r /tmp/python /tvm
     ! ls -la /tvm
